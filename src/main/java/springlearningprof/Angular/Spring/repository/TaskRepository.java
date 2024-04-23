@@ -1,4 +1,9 @@
 package springlearningprof.Angular.Spring.repository;
 
-public interface TaskRepository {
+import org.springframework.data.repository.CrudRepository;
+import springlearningprof.Angular.Spring.domain.Task;
+
+public interface TaskRepository extends CrudRepository<Task, Long> {
+
+
 }
